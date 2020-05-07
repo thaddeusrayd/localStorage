@@ -36,8 +36,9 @@
     const item = {
       text, // ES6 shorthand for 'text: text'
       done: false
-    }
-    
+    };
+    items.push(item);
+    this.reset();
   }
 
   addItems.addEventListener('submit', addItem);
