@@ -32,11 +32,12 @@
 
   function addItem(e) {
     e.preventDefault();
-    const text = this.querySelector('[name=item]');
+    const text = (this.querySelector('[name=item]')).value;
     const item = {
-      text: 'Item Name',
+      text, // ES6 shorthand for 'text: text'
       done: false
     }
+    
   }
 
   addItems.addEventListener('submit', addItem);
